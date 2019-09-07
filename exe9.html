@@ -1,0 +1,19 @@
+<script>
+
+var student=[
+{"id":501,"name":"ramu","per":30},
+{"id":502,"name":"navee","per":20},
+{"id":503,"name":"subbu","per":60},
+{"id":504,"name":"konanki","per":70},
+{"id":505,"name":"chinni","per":45},
+{"id":506,"name":"venky","per":85}
+]
+
+function StudentInfo(){
+    var std=student.filter(function(stdno){
+        return stdno.per<35;
+    })
+    console.log(std);
+}
+StudentInfo();
+</script>
